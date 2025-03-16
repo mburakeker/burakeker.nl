@@ -35,7 +35,7 @@ export default function Home() {
           >
             <FaGithub
               size={28}
-              className="dark:hover:text-ring hover:text-ring"
+              className="hover:text-ring"
             />
           </a>
           <a
@@ -45,13 +45,13 @@ export default function Home() {
           >
             <FaLinkedin
               size={28}
-              className="dark:hover:text-ring hover:text-ring"
+              className="hover:text-ring"
             />
           </a>
           <a href="mailto:mburakeker@outlook.com">
             <FaEnvelope
               size={28}
-              className="dark:hover:text-ring hover:text-ring"
+              className="hover:text-ring"
             />
           </a>
         </div>
@@ -79,7 +79,7 @@ export default function Home() {
             ))}
           </ul>
           <Link href="/about">
-            <div className="inline-flex flex-row gap-1 mt-4">
+            <div className="inline-flex flex-row gap-1 mt-4 text-primary/80 hover:text-primary">
               <p>Read more about me here</p>{" "}
               <HiArrowLongRight className="h-6 w-6" />
             </div>
