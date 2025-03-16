@@ -8,7 +8,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { DarkModeSwitch } from "@/components/ui/dark-mode-switch";
+import { DarkModeSwitch } from "@/components/DarkModeSwitch";
 
 export const Header: React.FC = () => {
   return (

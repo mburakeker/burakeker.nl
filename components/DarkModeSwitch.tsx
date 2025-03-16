@@ -1,7 +1,7 @@
 "use client";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "./button";
+import { Button } from "@/components/ui/button";
 
 export const DarkModeSwitch: React.FC = () => {
   const { resolvedTheme, setTheme } = useTheme();
