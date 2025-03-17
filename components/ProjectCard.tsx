@@ -1,8 +1,15 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React from "react";
+import { FaGithub } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface ProjectCardProps {
   title: string;
@@ -11,7 +18,12 @@ interface ProjectCardProps {
   liveLink?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, githubLink, liveLink }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  githubLink,
+  liveLink,
+}) => (
   <Card className="w-full">
     <CardHeader>
       <CardTitle>{title}</CardTitle>
@@ -21,18 +33,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, githubLin
     </CardContent>
     <CardFooter className="justify-end gap-4">
       {githubLink && (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" asChild>
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to GitHub Code"
+          >
             <FaGithub size={28} className="hover:text-ring" />
-          </Button>
-        </a>
+          </a>
+        </Button>
       )}
       {liveLink && (
-        <a href={liveLink} target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" asChild>
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to website"
+          >
             <FaArrowUpRightFromSquare size={28} className="hover:text-ring" />
-          </Button>
-        </a>
+          </a>
+        </Button>
       )}
     </CardFooter>
   </Card>
