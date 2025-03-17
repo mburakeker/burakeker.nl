@@ -1,63 +1,43 @@
 import { Badge } from "@/components/ui/badge";
+import { contactInfo, techStackItems } from "@/lib/data";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
 
-const TechStackItems = [
-  "C#",
-  ".NET",
-  "ASP.NET WebAPI",
-  "MSSQL",
-  "TypeScript",
-  "Next.js",
-  "React",
-  "Angular",
-  "Azure",
-  "Docker",
-  "Redis",
-];
-
 export default function Home() {
   return (
-    <main className="mx-auto flex max-w-2xl flex-col items-center justify-center">
+    <main className="px-8">
       <section>
-        <h1 className="scroll-m-20 text-7xl font-bold tracking-tight lg:text-7xl">
-          Burak Eker
-        </h1>
-        <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight text-center">
-          Full Stack .NET Developer
-        </h2>
-        <div className="flex flex-row gap-3 align-center justify-center mt-4">
-          <a
-            href="https://github.com/mburakeker"
-            target="_blank"
-            title="Link to GitHub Profile"
-          >
-            <FaGithub
-              size={28}
-              className="hover:text-ring"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mburakeker"
-            target="_blank"
-            title="Link to Linkedin Profile"
-          >
-            <FaLinkedin
-              size={28}
-              className="hover:text-ring"
-            />
-          </a>
-          <a href="mailto:mburakeker@outlook.com">
-            <FaEnvelope
-              size={28}
-              className="hover:text-ring"
-            />
-          </a>
+        <div className="mx-auto flex max-w-2xl flex-col text-center">
+          <h1 className="text-6xl font-bold tracking-tight lg:text-7xl">
+            Burak Eker
+          </h1>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Full Stack .NET Developer
+          </h2>
+          <div className="flex flex-row gap-3 justify-center mt-4">
+            <a
+              href={contactInfo.github}
+              target="_blank"
+              title="Link to GitHub Profile"
+            >
+              <FaGithub size={28} className="hover:text-ring" />
+            </a>
+            <a
+              href={contactInfo.linkedin}
+              target="_blank"
+              title="Link to Linkedin Profile"
+            >
+              <FaLinkedin size={28} className="hover:text-ring" />
+            </a>
+            <a href={contactInfo.mailAddress} title="Contact Email Address">
+              <FaEnvelope size={28} className="hover:text-ring" />
+            </a>
+          </div>
         </div>
       </section>
-      <section className="mt-16">
-        <div>
+      <section className="mt-8">
+        <div className="mx-auto flex max-w-2xl flex-col">
           <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight text-left mb-6">
             Summary
           </h2>
@@ -71,19 +51,24 @@ export default function Home() {
             tools that make people&apos;s lives easier.
           </p>
           <p className="mt-1">Here is my primary tech stack:</p>
-          <ul className="flex gap-3 mt-2">
-            {TechStackItems.map((value, index) => (
+          <ul className="flex flex-wrap gap-3">
+            {techStackItems.map((value, index) => (
               <li key={index}>
-                <Badge variant="secondary">{value}</Badge>
+                <Badge variant="secondary" className="hover:cursor-default">
+                  {value}
+                </Badge>
               </li>
             ))}
           </ul>
-          <Link href="/about">
-            <div className="inline-flex flex-row gap-1 mt-4 text-primary/80 hover:text-primary">
-              <p>Read more about me here</p>{" "}
+          <div className="pt-4">
+            <Link
+              href="/about"
+              className="inline-flex flex-row gap-1 text-primary/80 hover:text-primary"
+            >
+              <p>Read more about me here</p>
               <HiArrowLongRight className="h-6 w-6" />
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </section>
     </main>
