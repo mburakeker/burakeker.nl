@@ -45,7 +45,7 @@ export default function Home() {
       </section>
       <section className="mt-8">
         <div className="mx-auto flex max-w-2xl flex-col">
-          <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight text-left mb-6">
+          <h2 className="text-2xl font-semibold tracking-tight text-left mb-6">
             Summary
           </h2>
           <p>
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
       <section className="mt-8">
         <div className="mx-auto flex max-w-2xl flex-col">
-          <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight text-left mb-6">
+          <h2 className="text-2xl font-semibold tracking-tight text-left mb-6">
             Featured Projects
           </h2>
           <div className="space-y-4">

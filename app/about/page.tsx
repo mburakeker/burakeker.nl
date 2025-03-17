@@ -34,14 +34,14 @@ export default function AboutMe() {
           </p>
         </section>
         <section className="mt-6 mb-6">
-          <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight text-left mb-3">
+          <h2 className="text-2xl font-semibold tracking-tight text-left mb-3">
             Skills
           </h2>
           <div className="flex flex-col">
             <div className="grid grid-cols-3 space-y-4">
               {knowledge.map((category, index) => (
                 <div key={index}>
-                  <h3 className="scroll-m-20 text-lg font-semibold tracking-tight text-left mb-1">
+                  <h3 className="text-lg font-semibold tracking-tight text-left mb-1">
                     {category.title}
                   </h3>
                   <ul>
