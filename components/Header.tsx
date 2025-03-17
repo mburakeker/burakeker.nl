@@ -13,7 +13,7 @@ import { DarkModeSwitch } from "@/components/DarkModeSwitch";
 export const Header: React.FC = () => {
   return (
     <div className="w-full px-8">
-      <div className="mx-auto max-w-2xl flex justify-between pt-8 pb-16">
+      <div className="mx-auto max-w-2xl flex justify-between pt-8 pb-8">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>

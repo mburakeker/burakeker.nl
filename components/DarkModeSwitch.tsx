@@ -18,7 +18,7 @@ export const DarkModeSwitch: React.FC = () => {
     <Button
       onClick={handleToggleDarkMode}
       variant="outline"
-      size="lg"
+      size="icon"
       aria-label="Toggle Dark Mode"
     >
       <span className="sr-only">Toggle theme</span>

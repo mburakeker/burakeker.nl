@@ -1,6 +1,5 @@
 import { contactInfo, knowledge } from "@/lib/data";
 
-
 export default function AboutMe() {
   return (
     <main className="mx-auto flex max-w-2xl w-full px-8">
@@ -10,11 +9,12 @@ export default function AboutMe() {
             About Me
           </h1>
           <p>
-            I&apos;m Burak Eker, a Full-Stack Developer with 6 years of
-            experience crafting secure, scalable, and user-friendly web
-            applications. I&apos;ve had the chance to work across finance,
-            e-commerce, and manufacturing, where I&apos;ve tackled complex
-            challenges and built solutions that make a real difference.
+            Hey, I&apos;m Burak Eker! I&apos;ve been working as a Full-Stack
+            Developer for 6 years, building web apps. I started messing around
+            with computers when I was just 9 years old, mainly for gaming and
+            later diving into programming. Over the years, I&apos;ve worked in
+            industries like finance, e-commerce, and manufacturing, tackling
+            challenges and building solutions that truly make a difference.
           </p>
           <p className="mt-2">
             My skill set covers both backend and frontend development, with a
@@ -22,7 +22,15 @@ export default function AboutMe() {
           </p>
           <p className="mt-2">
             Outside of work, I enjoy reading tech news, trying out new indie
-            games, discovering <a href={contactInfo.spotify} className="underline underline-offset-4">music to binge</a>, and engaging in voluntary work.
+            games, discovering{" "}
+            <a
+              href={contactInfo.spotify}
+              className="underline underline-offset-4 text-primary hover:text-primary/80"
+              target="_blank"
+            >
+              music to binge
+            </a>
+            , and engaging in voluntary work.
           </p>
         </section>
         <section className="mt-6 mb-6">

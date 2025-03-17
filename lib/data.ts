@@ -7,7 +7,14 @@ export const contactInfo = {
   github: "https://github.com/mburakeker",
   linkedin: "https://www.linkedin.com/in/mburakeker",
   mailAddress: "mailto:mburakeker@outlook.com",
-  spotify: "https://open.spotify.com/user/o6zkmm6ikh4imnrg7069hf5u7"
+  spotify: "https://open.spotify.com/user/o6zkmm6ikh4imnrg7069hf5u7",
+}
+
+export const projectInfo = {
+  kwsplash: "https://kwsplash.com",
+  dualSubtitlesCode: "https://github.com/mburakeker/npo-start-dual-subtitles-chrome-extension",
+  dualSubtitlesStore: "https://chromewebstore.google.com/detail/npo-start-dual-subtitles/fiaaicoacdjmcpnlainngknokhbkiogl",
+  extensionTemplateCode: "https://github.com/mburakeker/chrome-extension-typescript-webpack"
 }
 
 export const techStackItems: string[] = [
