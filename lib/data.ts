@@ -27,6 +27,7 @@ export const techStackItems: string[] = [
   "Azure",
   "Docker",
   "SQL",
+  "Redis",
 ];
 
 export const knowledge: Knowledge[] = [

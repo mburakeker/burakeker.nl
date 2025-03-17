@@ -48,25 +48,27 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight text-left mb-6">
             Summary
           </h2>
-          <p>
-            Hi! I&apos;m a Full-Stack Developer with 6 years of experience
-            creating secure, scalable, and user-friendly web applications in
-            industries like finance, e-commerce, and manufacturing.
-          </p>
-          <p className="mt-2">
-            I love solving problems, simplifying complex systems, and building
-            tools that make people&apos;s lives easier.
-          </p>
-          <p className="mt-1">Here is my primary tech stack:</p>
-          <ul className="flex flex-wrap gap-3 p-2">
-            {techStackItems.map((value, index) => (
-              <li key={index}>
-                <Badge variant="secondary" className="hover:cursor-default">
-                  {value}
-                </Badge>
-              </li>
-            ))}
-          </ul>
+          <div className="space-y-3">
+            <p>
+              Hi! I&apos;m a Full-Stack Developer with 6 years of experience
+              creating secure, scalable, and user-friendly web applications in
+              industries like finance, e-commerce, and manufacturing.
+            </p>
+            <p>
+              I love solving problems, simplifying complex systems, and building
+              tools that make people&apos;s lives easier.
+            </p>
+            <p>Here is my primary tech stack:</p>
+            <ul className="flex flex-wrap gap-3 p-2">
+              {techStackItems.map((value, index) => (
+                <li key={index}>
+                  <Badge variant="secondary" className="hover:cursor-default">
+                    {value}
+                  </Badge>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="pt-4">
             <Link
               href="/about"
