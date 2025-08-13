@@ -50,7 +50,7 @@ export default function Home() {
           </h2>
           <div className="space-y-3">
             <p>
-              Hi! I&apos;m a Full-Stack Developer with 6 years of experience
+              Hi! I&apos;m a Full-Stack Developer with 7 years of experience
               creating secure, scalable, and user-friendly web applications in
               industries like finance, e-commerce, and manufacturing.
             </p>
