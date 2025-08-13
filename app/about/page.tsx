@@ -11,7 +11,7 @@ export default function AboutMe() {
           <div className="space-y-2">
             <p>
               Hey, I&apos;m Burak Eker! I&apos;ve been working as a Full-Stack
-              Developer for 6 years, building web apps.
+              Developer for 7 years, building web apps.
             </p>
             <p>
               I started messing around with computers when I was just 9 years
