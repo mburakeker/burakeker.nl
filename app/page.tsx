@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { Badge } from "@/components/ui/badge";
-import { contactInfo, projectInfo, techStackItems } from "@/lib/data";
+import { contactInfo, my, projectInfo, techStackItems } from "@/lib/data";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
@@ -50,7 +50,7 @@ export default function Home() {
           </h2>
           <div className="space-y-3">
             <p>
-              Hi! I&apos;m a Full-Stack Developer with 7 years of experience
+              Hi! I&apos;m a Full-Stack Developer with {my.yearsOfExperience} years of experience
               creating secure, scalable, and user-friendly web applications in
               industries like finance, e-commerce, and manufacturing.
             </p>

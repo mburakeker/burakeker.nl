@@ -3,6 +3,10 @@ type Knowledge = {
   skills: string[];
 };
 
+export const my = {
+  yearsOfExperience: 8,
+}
+
 export const contactInfo = {
   github: "https://github.com/mburakeker",
   linkedin: "https://www.linkedin.com/in/mburakeker",
